@@ -11,7 +11,7 @@ elec2days$dt<-strptime(paste(elec2days$Date, elec2days$Time),
 ##Plot 1
 hist(as.numeric(elec2days$Global_active_power)/500, 
      col="red", main="Global Active Power", 
-     xlab="Global Active Power (kilowatts")
+     xlab="Global Active Power (kilowatts)")
 
 ##Create PNG
 dev.copy(png, file="plot1.png", width=480, height=480)
